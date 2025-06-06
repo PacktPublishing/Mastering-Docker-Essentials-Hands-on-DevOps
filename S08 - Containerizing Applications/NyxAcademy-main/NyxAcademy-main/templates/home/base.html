@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NyxAcademy</title>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <img
+        src="{% static 'logos/nyxacademy-logo.png' %}"
+        alt="NyxAcademy"
+        class="logo"
+      />
+
+      <a href="{% url 'home' %}" class="udemy">Udemy</a>
+      <a href="{% url 'books' %}" class="books">Books</a>
+      <a href="{% url 'youtube' %}" class="youtube">Youtube</a>
+      <a href="{% url 'account_logout' %}" class="logout"> Logout </a>
+    </nav>
+    {% block content %} {% endblock %}
+  </body>
+</html>

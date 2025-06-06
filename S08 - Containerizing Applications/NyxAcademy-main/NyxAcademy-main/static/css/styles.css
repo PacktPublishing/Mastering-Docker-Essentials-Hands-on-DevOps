@@ -1,0 +1,99 @@
+.gradient-custom-2 {
+    background: #fccb90;
+    background: -webkit-linear-gradient(to right, #2FC1FF, #08ACF2);
+    background: linear-gradient(to right, #2FC1FF, #08ACF2);
+}
+
+@media (min-width: 768px) {
+    .gradient-form {
+        height: 100vh !important;
+    }
+}
+
+@media (min-width: 769px) {
+    .gradient-custom-2 {
+        border-top-right-radius: .3rem;
+        border-bottom-right-radius: .3rem;
+    }
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.button-container a {
+    margin-bottom: 10px;
+    width: 200px;
+    align-items: center;
+    font-weight: bold;
+    background-color: white;
+}
+
+.button-container a:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* 
+.button-container .btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.75em;
+    border-radius: 4px;
+    margin: 0.5em 0;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button-container .btn:hover {
+    background-color: #0056b3;
+    color: white;
+    text-decoration: none;
+} */
+
+/* styles.css */
+
+.container-9 {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.card-not {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 3px solid #007bff;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}

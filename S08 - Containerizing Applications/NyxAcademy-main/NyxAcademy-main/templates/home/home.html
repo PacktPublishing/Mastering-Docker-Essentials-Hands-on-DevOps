@@ -1,0 +1,81 @@
+{% extends 'home/base.html' %}
+{% load static %}
+{% block content %} 
+<div class="card">
+    <img
+      src="{% static 'logos/SaltStack.jpg' %}"
+      alt="SaltStack for the absolute Beginners - Practical DevOps"
+    />
+    <div class="card-content">
+      <a
+    href="https://www.udemy.com/course/saltstack-for-the-absolute-beginners-practical-devops/?couponCode=ST9MT71624"
+  ><h3>SaltStack for the absolute Beginners - Practical DevOps</h3>  </a>
+      <p>
+        This SaltStack course, designed for absolute beginners, introduces the
+        basic fundamental blocks needed to get started with SaltStack. The
+        course begins with an introduction to SaltStack and Salt’s key
+        terminologies followed by real time SaltStack setup, In-depth
+        Architecture, Salt Modules.
+      </p>
+      <h6>Yogesh Raheja, Thinknyx Technologies, Shruti Bhardwaj</h6>
+    </div>
+
+</div>
+<div class="card">
+  
+    <img
+      src="{% static 'logos/Open Tofu.jpg' %}"
+      alt="Infrastructure Automation with OpenTofu – Hands-On DevOps"
+    />
+    <div class="card-content">
+      <a
+      href="https://www.udemy.com/course/infrastructure-automation-with-opentofu-hands-on-devops/?couponCode=ST9MT716240"
+    > <h3>Infrastructure Automation with OpenTofu – Hands-On DevOps</h3>  </a>
+      <p>
+        This Infrastructure Automation with OpenTofu course is designed for
+        absolute beginners to experts looking to learn OpenTofu. It introduces
+        the basic fundamental blocks needed to get started with OpenTofu. The
+        course begins with an introduction to OpenTofu, explaining how it
+        differs from Terraform, followed by real time OpenTofu setup, OpenTofu
+        Configuration Language, Providers, Resources and OpenTofu Workflow.
+      </p>
+      <h6>Yogesh Raheja, Thinknyx Technologies, Shruti Deepthi Narayan</h6>
+    </div>
+
+</div>
+<div class="card">
+  <img
+    src="{% static 'logos/AI Ecosystem.jpg' %}"
+    alt="AI Ecosystem for the Absolute Beginners - Hands-On"
+  />
+  <div class="card-content">
+    <h3>AI Ecosystem for the Absolute Beginners - Hands-On</h3>
+    <p>
+      The "AI Ecosystem for Absolute Beginners" course is designed to
+      accommodate learners of all levels, from beginners to experienced
+      professionals looking to explore the world of Artificial Intelligence.
+      Acting as a foundational pillar, this course facilitates your journey into
+      the AI ecosystem. Starting with the basics of AI, the course guides you
+      through the lifecycle of AI applications and essential concepts. It also
+      covers the basics of Machine Learning, Deep Learning, and Generative AI,
+      supported by practical hands-on demos using AWS services such as
+      Rekognition, Forecast, Comprehend, and Bedrock.
+    </p>
+    <h6>Yogesh Raheja, Thinknyx Technologies</h6>
+  </div>
+</div>
+{% if context %} 
+{% for course in context %}
+
+<div class="card">
+  
+    <img src="{{course.image}}" alt="{{course.title}}" />
+    <div class="card-content">
+      <a href="{{course.link}}" target="_blank" ><h3>{{course.title}}</h3></a>
+      <p>{{course.description}}</p>
+      <h6>{{course.creator}}</h6>
+    </div>
+ 
+</div>
+
+{% endfor %} {% endif %} {% endblock %}
